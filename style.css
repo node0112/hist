@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    height: 100vh;
+    cursor: default;
+}
+html{
+    overflow-x: hidden;
+}
+div{
+    margin: 0;
+}
+
+.opening-container{
+    background-image: url('./images/hero.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.hero-container{
+    background-color: rgba(0, 0, 0, 0.173);
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    width: 100vw;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1em;
+    padding-top: 2em;
+    position: sticky;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3vw;
+}
+.header-link{
+    transition: all 0.3s;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.opening-text{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-size: 5em;
+    color: whitesmoke;
+    font-family: 'roboto',sans-serif;
+    font-weight: 900;
+}
+.logo-sub-text{
+    font-size: 2em;
+    color: yellow;
+    font-family: 'roboto',sans-serif;
+    margin-top: 1.3em;
+}
+
+.info-element{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'roboto';
+}
+.info-image{
+    height: 50vw;
+    width: 50vw;
+    object-fit: cover;
+}
+.info-text{
+    padding: 1em;
+}
+
+li:hover{
+    color: black;
+    background-color: whitesmoke;
+}
