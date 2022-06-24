@@ -6,12 +6,22 @@ body{
     height: 100vh;
     cursor: default;
 }
+.header> ul> li> a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.link{
+    padding: 0.3em;
+}
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 div{
     margin: 0;
 }
+
 
 .opening-container{
     background-image: url('./images/hero.jpg');
@@ -31,11 +41,11 @@ div{
     font-size: 1.5em;
     font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1em;
-    padding-top: 2em;
+    padding-top: 1em;
     position: sticky;
 }
 
-ul{
+.header > ul{
     list-style-type: none;
     display: flex;
     gap: 3vw;
@@ -59,12 +69,26 @@ ul{
     color: whitesmoke;
     font-family: 'roboto',sans-serif;
     font-weight: 900;
+    transition: all 1s;
 }
+.logo:hover{
+    color: black;
+}
+
 .logo-sub-text{
     font-size: 2em;
     color: #e3e3e3;
     font-family: 'roboto',sans-serif;
     margin-top: 1.3em;
+    transition: all 1s;
+    
+}
+.logo-sub-text > a{
+    text-decoration: none;
+    color: #e3e3e3;
+}
+.logo-sub-text>a:hover{
+    color: yellowgreen;
 }
 
 .info-element{
@@ -73,17 +97,62 @@ ul{
     align-items: center;
     font-size: 2em;
     font-family: 'roboto';
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 2vh;
 }
+
 .info-image{
-    height: 50vw;
+    height: 97vh;
     width: 50vw;
     object-fit: cover;
 }
+.title{
+    color: rosybrown;
+    font-size: 2em;
+}
 .info-text{
     padding: 1em;
+    width: 50vw;
+    font-size: 0.7em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5vh;
 }
 
-li:hover{
+
+#preserving{
+    display: flex;
+    border-top: 10px solid rosybrown;
+}
+#preserving-img{
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.preserving-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5vh;
+    padding: 1em    ;
+    margin-left: 1em; 
+    margin-top: 1.5em;
+}
+.preserving-text-sub{
+    font-size: 1.5em;
+}
+.preserving-text-sub > ul {
+    font-family: 'roboto',sans-serif;
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header>ul>li>a:hover{
     color: black;
     background-color: whitesmoke;
 }
